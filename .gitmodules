@@ -1,0 +1,3 @@
+[submodule "onlyoffice"]
+	path = onlyoffice
+	url = https://github.com/ONLYOFFICE/onlyoffice-owncloud.git
