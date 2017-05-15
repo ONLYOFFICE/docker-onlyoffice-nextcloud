@@ -27,7 +27,7 @@ bash init.sh
 docker-compose up -d
 ```
 
-You might need to wait a couple of minutes when all the containers are up and running after the above command.
+**Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
 
 4. Now launch the browser and enter the webserver address. The ownCloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
 
