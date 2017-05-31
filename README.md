@@ -31,10 +31,10 @@ docker-compose up -d
 
 4. Now launch the browser and enter the webserver address. The ownCloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
 
-5. Return to the project folder and run the `set_trusted_domain.sh` script:
+5. Return to the project folder and run the `set_configuration.sh` script:
 
 ```
-bash set_trusted_domain.sh
+bash set_configuration.sh
 ```
 
 Now you can enter ownCloud and create a new document. It will be opened in ONLYOFFICE Document Server.
