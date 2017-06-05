@@ -9,6 +9,8 @@ fi
 
 rm trusted_domain.tmp
 
+docker exec -u www-data owncloud-server php occ --no-warnings app:enable onlyoffice
+
 docker exec -u www-data owncloud-server php occ --no-warnings config:system:set onlyoffice DocumentServerUrl --value="/"
 docker exec -u www-data owncloud-server php occ --no-warnings config:system:set onlyoffice DocumentServerInternalUrl --value="http://onlyoffice-document-server/"
 docker exec -u www-data owncloud-server php occ --no-warnings config:system:set onlyoffice StorageUrl --value="http://owncloud-server/"
