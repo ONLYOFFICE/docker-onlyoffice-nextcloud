@@ -14,7 +14,6 @@ Document Server and ownCloud Docker installation will install the preconfigured 
 ```
 git clone --recursive https://github.com/ONLYOFFICE/docker-onlyoffice-owncloud
 ```
-```
 
 2. Run Docker Compose:
 
@@ -26,7 +25,7 @@ docker-compose up -d
 
 3. Now launch the browser and enter the webserver address. The ownCloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
 
-4. Return to the project folder and run the `set_configuration.sh` script:
+4. Go to the project folder and run the `set_configuration.sh` script:
 
 ```
 bash set_configuration.sh
