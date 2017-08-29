@@ -13,22 +13,22 @@ services:
      - onlyoffice
     volumes:
      - ./nginx.conf:/etc/nginx/nginx.conf
-  owncloud:
-    container_name: owncloud-server
-    image: owncloud:latest
+     - app_data:/var/www/html
+  app:
+    container_name: app-server
+    image: owncloud:fpm
     stdin_open: true
     tty: true
     restart: always
     expose:
      - '80'
-     - '443' 
+     - '9000'     
     networks:
      - onlyoffice
     volumes:
-     - owncloud_data:/var/www/html
-     - ./onlyoffice:/var/www/html/apps/onlyoffice
+     - app_data:/var/www/html
   mysql:
-    container_name: owncloud-mysql
+    container_name: app-mysql
     image: mariadb
     restart: always
     expose:
@@ -37,8 +37,8 @@ services:
      - onlyoffice
     environment:
       - MYSQL_ROOT_PASSWORD=i
-      - MYSQL_DATABASE=owncloud
-      - MYSQL_USER=owncloud_user
+      - MYSQL_DATABASE=app_db
+      - MYSQL_USER=app_user
       - MYSQL_PASSWORD=i
     volumes:
       - mysql_data:/var/lib/mysql
@@ -62,5 +62,5 @@ networks:
 volumes:
   document_data:
   document_log:
-  owncloud_data:
+  app_data:
   mysql_data:
