@@ -18,6 +18,7 @@ git clone --recursive https://github.com/ONLYOFFICE/docker-onlyoffice-owncloud
 2. Run Docker Compose:
 
 ```
+cd docker-onlyoffice-owncloud
 docker-compose up -d
 ```
 

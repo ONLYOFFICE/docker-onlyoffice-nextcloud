@@ -1,19 +1,5 @@
 version: '3'
 services:
-  nginx:
-    container_name: nginx-server
-    image: nginx
-    stdin_open: true
-    tty: true
-    restart: always
-    ports:
-     - 80:80
-     - 443:443
-    networks:
-     - onlyoffice
-    volumes:
-     - ./nginx.conf:/etc/nginx/nginx.conf
-     - app_data:/var/www/html
   app:
     container_name: app-server
     image: owncloud:fpm
@@ -21,27 +7,12 @@ services:
     tty: true
     restart: always
     expose:
-     - '80'
-     - '9000'     
+      - '80'
+      - '9000'
     networks:
-     - onlyoffice
+      - onlyoffice
     volumes:
-     - app_data:/var/www/html
-  mysql:
-    container_name: app-mysql
-    image: mariadb
-    restart: always
-    expose:
-     - '3306'
-    networks:
-     - onlyoffice
-    environment:
-      - MYSQL_ROOT_PASSWORD=i
-      - MYSQL_DATABASE=app_db
-      - MYSQL_USER=app_user
-      - MYSQL_PASSWORD=i
-    volumes:
-      - mysql_data:/var/lib/mysql
+      - app_data:/var/www/html
   onlyoffice-document-server:
     container_name: onlyoffice-document-server
     image: onlyoffice/documentserver:latest
@@ -54,8 +25,22 @@ services:
       - '80'
       - '443'
     volumes:
-       - document_data:/var/www/onlyoffice/Data
-       - document_log:/var/log/onlyoffice
+      - document_data:/var/www/onlyoffice/Data
+      - document_log:/var/log/onlyoffice
+  nginx:
+    container_name: nginx-server
+    image: nginx
+    stdin_open: true
+    tty: true
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - onlyoffice
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - app_data:/var/www/html
 networks:
   onlyoffice:
     driver: 'bridge'
