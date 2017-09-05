@@ -1,6 +1,6 @@
-## Document Server and ownCloud Docker installation
+## Document Server and ownCloud/Nextcloud Docker installation
 
-Document Server and ownCloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to ownCloud to your server running them in Docker containers.
+Document Server and ownCloud/Nextcloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to ownCloud/Nextcloud to your server running them in Docker containers.
 
 ## Requirements
 
@@ -15,7 +15,14 @@ Document Server and ownCloud Docker installation will install the preconfigured 
 git clone --recursive https://github.com/ONLYOFFICE/docker-onlyoffice-owncloud
 ```
 
-2. Run Docker Compose:
+2. Edit the `docker-compose.yml` file (if you want to connect Document Server to Nextcloud), opening it and altering the `image: owncloud:fpm` line:
+
+```
+image: nextcloud:fpm
+```
+This step is optional and, if you want to use Document Server with ownCloud, you do not need to change anything.
+
+3. Run Docker Compose:
 
 ```
 cd docker-onlyoffice-owncloud
@@ -24,15 +31,15 @@ docker-compose up -d
 
 **Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
 
-3. Now launch the browser and enter the webserver address. The ownCloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
+4. Now launch the browser and enter the webserver address. The ownCloud/Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
 
-4. Go to the project folder and run the `set_configuration.sh` script:
+5. Go to the project folder and run the `set_configuration.sh` script:
 
 ```
 bash set_configuration.sh
 ```
 
-Now you can enter ownCloud and create a new document. It will be opened in ONLYOFFICE Document Server.
+Now you can enter ownCloud/Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
 
 ## Project Information
 
