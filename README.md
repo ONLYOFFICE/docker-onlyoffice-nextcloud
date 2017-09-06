@@ -13,6 +13,8 @@ Document Server and ownCloud/Nextcloud Docker installation will install the prec
 
 ```
 git clone --recursive https://github.com/ONLYOFFICE/docker-onlyoffice-owncloud
+cd docker-onlyoffice-owncloud
+git submodule update --remote
 ```
 
 2. Edit the `docker-compose.yml` file (if you want to connect Document Server to Nextcloud), opening it and altering the `image: owncloud:fpm` line:
@@ -25,7 +27,6 @@ This step is optional and, if you want to use Document Server with ownCloud, you
 3. Run Docker Compose:
 
 ```
-cd docker-onlyoffice-owncloud
 docker-compose up -d
 ```
 
