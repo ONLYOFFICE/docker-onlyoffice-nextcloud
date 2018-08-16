@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     container_name: app-server
-    image: owncloud:fpm
+    image: nextcloud:fpm
     stdin_open: true
     tty: true
     restart: always

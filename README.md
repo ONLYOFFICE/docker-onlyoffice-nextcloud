@@ -1,6 +1,6 @@
-## Document Server and ownCloud/Nextcloud Docker installation
+## Document Server and Nextcloud Docker installation
 
-Document Server and ownCloud/Nextcloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to ownCloud/Nextcloud to your server running them in Docker containers.
+Document Server and Nextcloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to Nextcloud to your server running them in Docker containers.
 
 ## Requirements
 
@@ -11,42 +11,35 @@ Document Server and ownCloud/Nextcloud Docker installation will install the prec
 
 1. Get the latest version of this repository running the command:
 
-```
-git clone --recursive https://github.com/ONLYOFFICE/docker-onlyoffice-owncloud
-cd docker-onlyoffice-owncloud
-git submodule update --remote
-```
+    ```
+    git clone --recursive https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud
+    cd docker-onlyoffice-nextcloud
+    git submodule update --remote
+    ```
 
-2. Edit the `docker-compose.yml` file (if you want to connect Document Server to Nextcloud), opening it and altering the `image: owncloud:fpm` line:
+2. Run Docker Compose:
 
-```
-image: nextcloud:fpm
-```
-This step is optional and, if you want to use Document Server with ownCloud, you do not need to change anything.
+    ```
+    docker-compose up -d
+    ```
 
-3. Run Docker Compose:
+    **Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
 
-```
-docker-compose up -d
-```
+3. Now launch the browser and enter the webserver address. The Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
 
-**Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
+4. Go to the project folder and run the `set_configuration.sh` script:
 
-4. Now launch the browser and enter the webserver address. The ownCloud/Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
+    ```
+    bash set_configuration.sh
+    ```
 
-5. Go to the project folder and run the `set_configuration.sh` script:
-
-```
-bash set_configuration.sh
-```
-
-Now you can enter ownCloud/Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
+Now you can enter Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
 
 ## Project Information
 
 Official website: [http://www.onlyoffice.org](http://onlyoffice.org "http://www.onlyoffice.org")
 
-Code repository: [https://github.com/ONLYOFFICE/docker-onlyoffice-owncloud](https://github.com/ONLYOFFICE/docker-onlyoffice-owncloud "https://github.com/ONLYOFFICE/docker-onlyoffice-owncloud")
+Code repository: [https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud](https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud "https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud")
 
 SaaS version: [http://www.onlyoffice.com](http://www.onlyoffice.com "http://www.onlyoffice.com")
 
