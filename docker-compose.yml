@@ -45,7 +45,7 @@ services:
     image: mariadb
     restart: always
     volumes:
-      - db:/var/lib/mysql
+      - mysql_data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=MyR00tSQ1!
       - MYSQL_PASSWORD=N3xtCl0ud!
