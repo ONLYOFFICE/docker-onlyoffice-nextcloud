@@ -41,7 +41,7 @@ Now you can enter Nextcloud and create a new document. It will be opened in ONLY
 
 ## For More Help Using this Repository
 
-Visit the NewsHUD Article that covers setup: [https://newshud.net/nextcloud-with-a-document-server-mysql-docker-tutorial/](https://newshud.net "https://newshud.net")
+Visit the NewsHUD Article that covers setup: [https://newshud.net](https://newshud.net/nextcloud-with-a-document-server-mysql-docker-tutorial/ "https://newshud.net/nextcloud-with-a-document-server-mysql-docker-tutorial/")
 
 ## Project Information
 
