@@ -27,6 +27,10 @@ Document Server and Nextcloud Docker installation will install the preconfigured
 
 3. Now launch the browser and enter the webserver address. The Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
 
+4. Once the setup wizard has completed, from your dashboard, go into Settings and look inside of your Apps section. 
+
+5. Inside of your Apps section, select the Integration menu on the left side. Find the OnlyOffice App, Download & Enable it.
+
 4. Go to the project folder and run the `set_configuration.sh` script:
 
     ```
@@ -34,6 +38,10 @@ Document Server and Nextcloud Docker installation will install the preconfigured
     ```
 
 Now you can enter Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
+
+## For More Help Using this Repository
+
+Visit the NewsHUD Article that covers setup: [https://newshud.net/nextcloud-with-a-document-server-mysql-docker-tutorial/](https://newshud.net "https://newshud.net")
 
 ## Project Information
 
