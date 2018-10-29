@@ -41,19 +41,6 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - app_data:/var/www/html
-  db:
-    container_name: mariadb
-    image: mariadb
-    restart: always
-    volumes:
-      - mysql_data:/var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=MyR00tSQ1!
-      - MYSQL_PASSWORD=N3xtCl0ud!
-      - MYSQL_DATABASE=nextcloud
-      - MYSQL_USER=nextcloud
-    networks:
-      - onlyoffice
 networks:
   onlyoffice:
     driver: 'bridge'
