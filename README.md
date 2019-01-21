@@ -12,9 +12,7 @@ Document Server and Nextcloud Docker installation will install the preconfigured
 1. Get the latest version of this repository running the command:
 
     ```
-    git clone --recursive https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud
-    cd docker-onlyoffice-nextcloud
-    git submodule update --remote
+    git clone https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud
     ```
 
 2. Run Docker Compose:
