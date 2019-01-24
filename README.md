@@ -13,6 +13,7 @@ Document Server and Nextcloud Docker installation will install the preconfigured
 
     ```
     git clone https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud
+    cd docker-onlyoffice-nextcloud
     ```
 
 2. Run Docker Compose:
