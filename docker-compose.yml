@@ -9,8 +9,6 @@ services:
     expose:
       - '80'
       - '9000'
-    networks:
-      - onlyoffice
     volumes:
       - app_data:/var/www/html
   onlyoffice-document-server:
@@ -19,8 +17,6 @@ services:
     stdin_open: true
     tty: true
     restart: always
-    networks:
-      - onlyoffice
     expose:
       - '80'
       - '443'
@@ -36,14 +32,9 @@ services:
     ports:
       - 80:80
       - 443:443
-    networks:
-      - onlyoffice
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - app_data:/var/www/html
-networks:
-  onlyoffice:
-    driver: 'bridge'
 volumes:
   document_data:
   document_log:
