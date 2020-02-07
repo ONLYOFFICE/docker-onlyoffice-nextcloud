@@ -2,10 +2,12 @@
 
 Document Server and Nextcloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to Nextcloud to your server running them in Docker containers.
 
+
 ## Requirements
 
 * The latest version of Docker (can be downloaded here: [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/))
 * Docker compose (can be downloaded here: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/))
+
 
 ## Installation
 
@@ -18,6 +20,8 @@ Document Server and Nextcloud Docker installation will install the preconfigured
 
 2. Run Docker Compose:
 
+    **Please note**: the action must be performed with **root** rights.
+
     ```
     docker-compose up -d
     ```
@@ -28,15 +32,18 @@ Document Server and Nextcloud Docker installation will install the preconfigured
 
 4. Go to the project folder and run the `set_configuration.sh` script:
 
+    **Please note**: the action must be performed with **root** rights.
+
     ```
     bash set_configuration.sh
     ```
 
 Now you can enter Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
 
+
 ## ONLYOFFICE Document Server editions
 
-Here we offer you to deploy ownCloud with preconfigured free version of ONLYOFFICE Document Server. Note that there’re commercial versions of it. 
+Here we offer you to deploy ownCloud with preconfigured free version of ONLYOFFICE Document Server. Note that there're commercial versions of it. 
 
 **ONLYOFFICE Document Server:**
 
@@ -98,18 +105,20 @@ The table below will help you make the right choice.
 
 *Changing style and deleting (Full support coming soon)
 
+
 ## Project Information
 
-Official website: [https://www.onlyoffice.com/](https://www.onlyoffice.com/?utm_source=github&utm_medium=cpc&utm_campaign=GitHubDockerNC)
+Official website: [https://www.onlyoffice.com/](https://www.onlyoffice.com/?utm_source=github&utm_medium=cpc&utm_campaign=GitHubDockerNC)
 
-Code repository: [https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud](https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud "https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud")
+Code repository: [https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud](https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud "https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud")
 
-Integration Edition: [http://www.onlyoffice.com/connectors-nextcloud.aspx](https://www.onlyoffice.com/connectors-nextcloud.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubDockerNC)
+Integration Edition: [http://www.onlyoffice.com/connectors-nextcloud.aspx](https://www.onlyoffice.com/connectors-nextcloud.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubDockerNC)
+
 
 ## User Feedback and Support
 
 If you have any problems with or questions about [ONLYOFFICE Document Server][2], please visit our official forum to find answers to your questions: [dev.onlyoffice.org][1] or you can ask and answer ONLYOFFICE development questions on [Stack Overflow][3].
 
-  [1]: http://dev.onlyoffice.org
-  [2]: https://github.com/ONLYOFFICE/DocumentServer
-  [3]: http://stackoverflow.com/questions/tagged/onlyoffice
+[1]: http://dev.onlyoffice.org
+[2]: https://github.com/ONLYOFFICE/DocumentServer
+[3]: http://stackoverflow.com/questions/tagged/onlyoffice
