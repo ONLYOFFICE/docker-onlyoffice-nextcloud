@@ -64,13 +64,14 @@ The table below will help you make the right choice.
 | Documentation | [Help Center](https://helpcenter.onlyoffice.com/server/docker/opensource/index.aspx) | [Help Center](https://helpcenter.onlyoffice.com/server/integration-edition/index.aspx) |
 | Standard support | [GitHub](https://github.com/ONLYOFFICE/DocumentServer/issues) or paid | One year support included |
 | Premium support | [Buy Now](https://www.onlyoffice.com/support.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubDockerNC) | [Buy Now](https://www.onlyoffice.com/support.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubDockerNC) |
-| **Services** | **Community Edition** | **Integration Edition** | 
-| Conversion Service                | + | + | 
-| Document Builder Service          | + | + | 
+| **Services** | **Community Edition** | **Integration Edition** |
+| Conversion Service                | + | + |
+| Document Builder Service          | + | + |
 | **Interface** | **Community Edition** | **Integration Edition** |
 | Tabbed interface                       | + | + |
 | White Label                            | - | - |
-| Integrated test example (node.js)     | - | + |
+| Integrated test example (node.js)*     | - | + |
+| Mobile web editors | - | + |
 | **Plugins & Macros** | **Community Edition** | **Integration Edition** |
 | Plugins                           | + | + |
 | Macros                            | + | + |
@@ -84,17 +85,19 @@ The table below will help you make the right choice.
 | **Document Editor features** | **Community Edition** | **Integration Edition** |
 | Font and paragraph formatting   | + | + |
 | Object insertion                | + | + |
-| Content control                 | + | + |
+| Adding Content control          | - | + | 
+| Editing Content control         | + | + | 
 | Layout tools                    | + | + |
 | Table of contents               | + | + |
 | Navigation panel                | + | + |
 | Mail Merge                      | + | + |
+| Comparing Documents             | - | +* |
 | **Spreadsheet Editor features** | **Community Edition** | **Integration Edition** |
 | Font and paragraph formatting   | + | + |
 | Object insertion                | + | + |
 | Functions, formulas, equations  | + | + |
 | Table templates                 | + | + |
-| Pivot tables                    | +* | +* |
+| Pivot tables                    | +** | +** |
 | **Presentation Editor features** | **Community Edition** | **Integration Edition** |
 | Font and paragraph formatting   | + | + |
 | Object insertion                | + | + |
@@ -103,7 +106,9 @@ The table below will help you make the right choice.
 | Notes                           | + | + |
 | | [Get it now](https://www.onlyoffice.com/download.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubDockerNC)  | [Start Free Trial](https://www.onlyoffice.com/connectors-request.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubDockerNC)  |
 
-*Changing style and deleting (Full support coming soon)
+\*  It's possible to add documents for comparison from your local drive, from URL and from Nextcloud storage.
+
+\** Changing style and deleting (Full support coming soon)
 
 
 ## Project Information
