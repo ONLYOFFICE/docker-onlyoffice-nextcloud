@@ -98,8 +98,8 @@ The table below will help you make the right choice.
 | Object insertion                | + | + |
 | Functions, formulas, equations  | + | + |
 | Table templates                 | + | + |
-| Pivot tables                    | -** | + |
-| Conditional formatting  for viewing | +*** | +** |
+| Pivot tables                    | + | + |
+| Conditional formatting  for viewing | +** | +** |
 | **Presentation Editor features** | **Community Edition** | **Enterprise Edition** |
 | Font and paragraph formatting   | + | + |
 | Object insertion                | + | + |
@@ -110,9 +110,7 @@ The table below will help you make the right choice.
 
 \*  It's possible to add documents for comparison from your local drive, from URL and from Nextcloud storage.
 
-\** In free version, pivot tables are supported for viewing, changing style and deleting
-
-\*** Support for all conditions and gradient. Adding/Editing capabilities are coming soon
+\** Support for all conditions and gradient. Adding/Editing capabilities are coming soon
 
 ## Project Information
 
