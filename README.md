@@ -26,7 +26,7 @@ Document Server and Nextcloud Docker installation will install the preconfigured
     docker-compose up -d
     ```
 
-    For enabling SLL encryption create a folder named `certs`, copy in this folder private key named as `tls.key` and certificate named as `tls.crt`.
+    For enabling SSL encryption create a folder named `certs`, copy in this folder private key named as `tls.key` and certificate named as `tls.crt`.  
     Run this command:
 
     ```
