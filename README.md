@@ -26,6 +26,13 @@ Document Server and Nextcloud Docker installation will install the preconfigured
     docker-compose up -d
     ```
 
+    For enabling SLL encryption create a folder named `certs`, copy in this folder private key named as `tls.key` and certificate named as `tls.crt`.
+    Run this command:
+
+    ```
+    docker-compose -f docker-compose.yml -f ssl.yml up -d
+    ```
+
     **Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
 
 3. Now launch the browser and enter the webserver address. The Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
@@ -36,6 +43,12 @@ Document Server and Nextcloud Docker installation will install the preconfigured
 
     ```
     bash set_configuration.sh
+    ```
+
+    For SSL encryption, the command should be like this:
+
+    ```
+    bash set_configuration.sh ssl
     ```
 
 Now you can enter Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
