@@ -1,6 +1,9 @@
 version: '3'
 services:
+  onlyoffice-document-server:
+    environment:
+      - USE_UNAUTHORIZED_STORAGE=true
   nginx:
     volumes:
-      - ./certs:/etc/nginx/certs
+      - ./certs:/etc/nginx/certs:ro
       - ./nginx-ssl.conf:/etc/nginx/nginx.conf
