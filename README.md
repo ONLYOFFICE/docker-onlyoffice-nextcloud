@@ -49,7 +49,7 @@ Here we offer you to deploy Nextcloud with preconfigured free version of ONLYOFF
 
 * Community Edition (`onlyoffice-documentserver` package)
 
-* Enterprise Edition (`onlyoffice-documentserver-ie` package)
+* Enterprise Edition (`onlyoffice-documentserver-ee` package)
 
 The table below will help you make the right choice.
 
