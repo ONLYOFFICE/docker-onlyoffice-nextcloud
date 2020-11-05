@@ -45,12 +45,6 @@ Document Server and Nextcloud Docker installation will install the preconfigured
     bash set_configuration.sh
     ```
 
-    For SSL encryption, the command should look like this:
-
-    ```
-    bash set_configuration.sh ssl
-    ```
-
 Now you can enter Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
 
 
