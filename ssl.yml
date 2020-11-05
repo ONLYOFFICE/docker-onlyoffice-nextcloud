@@ -6,4 +6,4 @@ services:
   nginx:
     volumes:
       - ./certs:/etc/nginx/certs:ro
-      - ./nginx/nginx-ssl.conf:/etc/nginx/nginx.conf
+      - ./nginx/nginx-ssl.conf:/etc/nginx/nginx.conf:ro
