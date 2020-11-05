@@ -1,9 +1,8 @@
 version: '3'
 services:
-  ## Uncomment these lines for using self-signed SSL certificate
-  # onlyoffice-document-server:
-  #   environment:
-  #     - USE_UNAUTHORIZED_STORAGE=true
+  onlyoffice-document-server:
+    environment:
+      - USE_UNAUTHORIZED_STORAGE=true
   nginx:
     volumes:
       - ./certs:/etc/nginx/certs:ro
