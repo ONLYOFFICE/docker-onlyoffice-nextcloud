@@ -1,9 +1,13 @@
 ## Host
 Create folder save data
-mkdir /nextcloud
-mkdir /nextcloud/db
-mkdir /nextcloud/data
 
+    ```
+    mkdir /nextcloud
+    mkdir /nextcloud/db
+    mkdir /nextcloud/data
+    mkdir /nextcloud/onlyoffice/data
+    mkdir /nextcloud/onlyoffice/log
+    ```
 ## Document Server and Nextcloud Docker installation
 
 Document Server (distributed as ONLYOFFICE Docs starting from v.6.0) and Nextcloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to Nextcloud to your server running them in Docker containers.
