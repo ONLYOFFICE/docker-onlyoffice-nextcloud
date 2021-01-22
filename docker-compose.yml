@@ -55,7 +55,7 @@ services:
       MYSQL_USER: nextcloud
       MYSQL_PASSWORD: Media2021@
 volumes:
-  document_data: /nextcloud/onlyoffice/data
-  document_log: /nextcloud/onlyoffice/log
-  app_data: /nextcloud/data
-  mysql_data: /nextcloud/db
+  document_data:
+  document_log:
+  app_data:
+  mysql_data:
