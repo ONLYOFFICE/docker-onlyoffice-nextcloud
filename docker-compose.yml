@@ -46,9 +46,6 @@ services:
         MYSQL_DATABASE: nextcloud
         MYSQL_USER: nextcloud
         MYSQL_PASSWORD: 168122137a@
-      stdin: true
-      tty: true
-      ports: 
 volumes:
   document_data:
   document_log:
