@@ -35,17 +35,17 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - app_data:/var/www/html
-    db:
-      container_name: mysql-server
-      image: mysql:5.7
-      volumes:
-        - mysql_data: /var/lib/mysql
-      restart: always
-      environment:
-        MYSQL_ROOT_PASSWORD: wifimedia@123
-        MYSQL_DATABASE: nextcloud
-        MYSQL_USER: nextcloud
-        MYSQL_PASSWORD: 168122137a@
+   db:
+     container_name: mysql-server
+     image: mysql:5.7
+     volumes:
+       - mysql_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: wifimedia@123
+       MYSQL_DATABASE: nextcloud
+       MYSQL_USER: nextcloud
+       MYSQL_PASSWORD: Media2021@
 volumes:
   document_data:
   document_log:
