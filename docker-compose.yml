@@ -38,6 +38,10 @@ services:
   db:
     container_name: mysql-server
     image: mysql:5.7
+    stdin_open: true
+    tty: true
+    ports:
+      - 3306:3306
     volumes:
       - mysql_data:/var/lib/mysql
     restart: always
