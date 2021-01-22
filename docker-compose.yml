@@ -3,6 +3,8 @@ services:
   app:
     container_name: app-server
     image: nextcloud:fpm
+    depends_on:
+      - db
     stdin_open: true
     tty: true
     restart: always
@@ -11,6 +13,7 @@ services:
       - '9000'
     volumes:
       - app_data:/var/www/html
+      - /etc/localtime:/etc/localtime:ro
   onlyoffice-document-server:
     container_name: onlyoffice-document-server
     image: onlyoffice/documentserver:latest
@@ -44,6 +47,7 @@ services:
       - 3306:3306
     volumes:
       - mysql_data:/var/lib/mysql
+      - /etc/localtime:/etc/localtime:ro
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: wifimedia@123
