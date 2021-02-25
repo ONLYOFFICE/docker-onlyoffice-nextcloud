@@ -3,8 +3,6 @@ services:
   app:
     container_name: app-server
     image: nextcloud:fpm
-    stdin_open: true
-    tty: true
     restart: always
     expose:
       - '80'
@@ -14,8 +12,6 @@ services:
   onlyoffice-document-server:
     container_name: onlyoffice-document-server
     image: onlyoffice/documentserver:latest
-    stdin_open: true
-    tty: true
     restart: always
     expose:
       - '80'
@@ -26,8 +22,6 @@ services:
   nginx:
     container_name: nginx-server
     image: nginx
-    stdin_open: true
-    tty: true
     restart: always
     ports:
       - 80:80
