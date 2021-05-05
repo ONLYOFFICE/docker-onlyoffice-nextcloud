@@ -26,7 +26,7 @@ Document Server (distributed as ONLYOFFICE Docs starting from v.6.0) and Nextclo
     docker-compose up -d
     ```
 
-    To enable SSL encryption, create `certs` folder and copy the private key named as `tls.key` and the certificate named as `tls.crt` to it.  
+    To enable SSL encryption, create `certs` folder and copy the private key named as `privkey.pem` and the certificate named as `fullchain.pem` to it.  
     Run this command:
 
     ```
