@@ -26,6 +26,13 @@ Document Server (distributed as ONLYOFFICE Docs starting from v.6.0) and Nextclo
     docker-compose up -d
     ```
 
+    To enable SSL encryption, create `certs` folder and copy the private key named as `privkey.pem` and the certificate named as `fullchain.pem` to it.  
+    Run this command:
+
+    ```
+    docker-compose -f docker-compose.yml -f ssl.yml up -d
+    ```
+
     **Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
 
 3. Now launch the browser and enter the webserver address. The Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
