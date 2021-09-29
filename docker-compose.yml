@@ -27,7 +27,8 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/common.conf:/etc/nginx/common.conf:ro
       - app_data:/var/www/html
 volumes:
   document_data:
