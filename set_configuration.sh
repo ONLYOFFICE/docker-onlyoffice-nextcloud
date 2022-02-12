@@ -18,3 +18,5 @@ docker exec -u www-data app-server php occ --no-warnings config:system:set onlyo
 docker exec -u www-data app-server php occ --no-warnings config:system:set onlyoffice StorageUrl --value="http://nginx-server/"
 
 docker exec -u www-data app-server php occ --no-warnings config:system:set allow_local_remote_servers  --value=true
+
+docker exec -u www-data app-server php occ config:system:set overwriteprotocol --value=https
