@@ -13,6 +13,8 @@ services:
     container_name: onlyoffice-document-server
     image: onlyoffice/documentserver:latest
     restart: always
+    environment:
+      - JWT_ENABLED=false
     expose:
       - '80'
       - '443'
