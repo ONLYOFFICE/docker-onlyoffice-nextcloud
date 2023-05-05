@@ -14,7 +14,7 @@ services:
     image: onlyoffice/documentserver:latest
     restart: always
     environment:
-      - JWT_ENABLED=false
+      - JWT_SECRET=secret
     expose:
       - '80'
       - '443'
