@@ -38,8 +38,9 @@ Document Server (distributed as ONLYOFFICE Docs starting from v.6.0) and Nextclo
     bash set_configuration.sh
     ```
 
-Now you can enter Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
+**Please note**: The default JWT (secret key) is enabled in ONLYOFFICE Document Server. It is recommended to specify your own secret key in the Nextcloud administrative configuration and [ONLYOFFICE Docs](https://helpcenter.onlyoffice.com/installation/docs-configure-jwt.aspx).
 
+Now you can enter Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server. 
 
 ## ONLYOFFICE Docs editions
 
